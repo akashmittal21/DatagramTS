@@ -1,0 +1,640 @@
+.popover {
+    max-width: 800px !important;
+  }
+  .popover-body-node-click {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    max-width: 100%;
+  }
+  .popover-body-node-add-click {
+    display: flex;
+    flex-direction: column !important;
+    gap: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    max-width: 100%;
+  }
+  .form-group-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    flex-direction: row;
+  }
+
+  .form-group-row > * {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .form-group-row > *:last-child {
+    margin-right: 0;
+  }
+
+  .table {
+    display: flex;
+    gap: 10px;
+    display: inline-table;
+    margin-top: -15px;
+  }
+
+  /* .table-container table {
+    display: inline-table;
+  } */
+  .popover-body-edge-click {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    align-items: center;
+  }
+
+  .popover-body-edge-click .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popover-body-edge-click label {
+    margin-right: 10px;
+  }
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  table th {
+    background-color: #f7f7f7;
+    text-align: left;
+    padding: 8px;
+    font-weight: 600;
+    width: 40%;
+  }
+
+  .table td,
+  .table th {
+    padding: 0.35rem !important;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  #aitp_header {
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-family: roboto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-top: 0px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    background-color: white; /* Set background color to white */
+  }
+  #aitp_footer {
+    position: fixed;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    /* height: 60px; */
+    background: #020260;
+    /* margin-left: -15px; */
+    padding-right: 10px;
+    margin-bottom: -2px;
+  }
+  #createNodeBtn {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: #020260;
+    transform: translate(-50%, -50%);
+  }
+  #create-json-btn {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #generate-test-btn{
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #generate-web-btn {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .aitp_nodecolor_master {
+      fill: rgb(2, 2, 96);
+      stroke: black;
+      stroke-width: 3px;
+      padding: 3px;
+    }
+
+  .aitp_node_master {
+      color: white;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+  }
+
+  .aitp_nodecolor_displayActivePage {
+      fill: #005F73;
+      stroke: black;
+      stroke-width: 2px;
+  }
+
+  .aitp_node_displayActivePage {
+      color: white;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+  }
+
+  .aitp_nodecolor_setText {
+      fill: #0A9396;
+      stroke: darkblue;
+      stroke-width: 2px;
+  }
+
+    .aitp_node_setText {
+      color: white;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+    }
+
+    .aitp_nodecolor_clickButton {
+      fill: #94D2BD;
+      stroke: darkblue;
+      stroke-width: 2px;
+    }
+
+    .aitp_node_clickButton {
+      color: black;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+    }
+
+    .aitp_nodecolor_selectDropdown {
+      fill: #EE9B00;
+      stroke: darkblue;
+      stroke-width: 2px;
+    }
+
+    .aitp_node_selectDropdown {
+      color: white;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+    }
+
+    .aitp_nodecolor_executeAPI {
+      fill: #E9D8A6;
+      stroke: darkblue;
+      stroke-width: 2px;
+    }
+
+    .aitp_node_executeAPI {
+      color: black;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+    }
+
+    .aitp_nodecolor_ResponseButtons {
+      fill: lightgray;
+      stroke: darkgray;
+      stroke-width: 2px;
+    }
+
+    .aitp_node_ResponseButtons {
+      color: black;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+    }
+
+    .aitp_nodecolor_CvItemsSort {
+      fill: #AE2012;
+      stroke: black;
+      stroke-width: 2px;
+    }
+
+    .aitp_node_CvItemsSort {
+      color: white;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+    }
+
+    .aitp_nodecolor_ErrorMessage {
+      fill: lightgray;
+      stroke: darkgray;
+      stroke-width: 2px;
+    }
+
+    .aitp_node_ErrorMessage {
+      color: black;
+      padding: 3px;
+      text-align: center;
+      font-size: 13px;
+      font-family: roberto;
+    }
+
+    #aitp_path {
+      stroke-width: 2px;
+      stroke: #333333;
+    }
+
+
+    #aitp_header {
+      color: black;
+      width: 100%;
+      text-align: center;
+      font-size: 17px;
+      font-family: roboto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      margin-top: 0px;
+      padding-top: 15px;
+      margin-bottom: 0px;
+      padding-bottom: 15px;
+      background-color: white; /* Set background color to white */
+    }
+
+    #aitp_logo {
+      height: 52px;
+      margin-top: 10px;
+      margin-left: 20px;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 1;
+    }
+
+    #aitp_project_details {
+      top: 0;
+      right: 0;
+      margin-top: 15px;
+      margin-right: 20px;
+      font-size: 10px;
+      position: fixed;
+      text-align: right;
+      z-index: 1;
+    }
+
+    #line {
+      top: 63px;
+      left: 0;
+      right: 0;
+      border: none;
+      height: 1px;
+      background-color: #020260;
+      z-index: 0;
+      position: fixed;
+    }
+
+    body{
+      background-color: white;
+    }
+
+    #aitp_table_header {
+      /* padding: 10px; */
+      padding-right: 20px;
+      color: #020260;
+      border: 1px solid black;
+      text-align: left;
+      font-size: 12px;
+      /* padding-top: 10px; */
+    }
+
+    #aitp_table_data {
+      /* padding: 10px; */
+      padding-right: 20px;
+      border: 1px solid rgb(128, 128, 128);
+      font-size: 9px;
+    }
+
+
+
+    #aitp_footer {
+      position: fixed;
+      text-align: center;
+      color: white;
+      bottom: 0;
+      width: 100%;
+      /* height: 60px; */
+      background: #020260;
+      /* margin-left: -15px; */
+      padding-right: 10px;
+      margin-bottom: -2px;
+    }
+
+
+
+    #aitp_popup_header {
+      background-color: rgb(2, 2, 96);
+      color: white;
+      text-align: center;
+      margin-top: 0px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    button {
+      float: right;
+      /* background-color: lightblue; */
+      border: none;
+      border-radius: 5px;
+      padding: 15px 15px;
+      color: white;
+      cursor: pointer;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    /* button:hover {
+      background-color: lightblue;
+    }
+
+    button:active {
+      background-color: rgb(112, 203, 234);
+      color: white;
+    } */
+    .edit-button {
+      background-color: darkblue;
+      font-size: 10px;
+      margin-top: -10px;
+      height: 25px;
+      padding: 0 10px;
+      text-align: center;
+      display: inline-block;
+    }
+    .cancel-button {
+      background-color: maroon;
+      margin-top: -10px;
+      font-size: 10px;
+      line-height: 20px;
+      height: 25px;
+      padding: 0 10px;
+      text-align: center;
+      display: inline-block;
+    }
+    .add-button {
+      float: left;
+      background-color: darkgreen;
+      font-size: 10px;
+      margin-top: -10px;
+      height: 25px;
+      padding: 0 10px;
+      text-align: center;
+      /* display: inline-block; */
+    }
+    .save-button {
+      background-color: #005F73;
+      font-size: 10px;
+      margin-top: -10px;
+      line-height: 20px;
+      height: 25px;
+      padding: 0 10px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .mermaid svg {
+      /* margin-left: 13cm; */
+      margin-top: 2.2cm;
+      /* margin: auto; */
+      width: 100%;
+      /* height: fit-content; */
+    }
+
+
+    @-webkit-keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    #aitp_legend {
+      position: absolute;
+      bottom: 60px;
+      right: 30px;
+      width: 200px;
+      padding: 10px;
+      background-color: white;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 10px;
+      /* font-family: 'Roboto'; */
+    }
+
+    #aitp_legend_header {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    #aitp_legend ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #aitp_legend li {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    #aitp_legend li span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    #aitp_legend .openurl {
+      background-color: rgb(2, 2, 96);
+    }
+
+    #aitp_legend .displayactivepage {
+      background-color: #005F73;
+    }
+
+    #aitp_legend .settext {
+      background-color: #0A9396;
+    }
+
+    #aitp_legend .clickbutton {
+      background-color: #94D2BD;
+    }
+
+    #aitp_legend .selectdropdown {
+      background-color: #EE9B00;
+    }
+
+    #aitp_legend .nontestedactionables {
+      background-color: lightgray;
+    }
+
+    #aitp_legend .executeapi {
+      background-color: #E9D8A6;
+    }
+
+    #aitp_legend .crossverify {
+      background-color: #AE2012;
+    }
+
+    #graphDiv {
+      /* margin: 0 auto; */
+      margin-left: 400px;
+      max-width: 600px; /* change the value as needed */
+    }
+
+    #popup-input {
+      width: 100%;
+      background-color: red;
+    }
+
+    table.aitp_table td {
+      font-size: 9px; /* adjust to the desired font size */
+    }
+
+    .edgeLabels span {
+      background-color: white;
+      text-align: center;
+      margin: auto;
+      font-size: 14px;
+      padding-right: 10px;
+    }
+
+    .mermaid {
+      display: flex;
+      justify-content: center;
+    }
+
+    .popover-header {
+      background-color: rgb(2, 2, 96) !important;
+      color: white !important;
+      text-align: center !important;
+    }
+
+
+
+
+  #index {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 200px;
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+
+  #index ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #index li {
+    margin-bottom: 5px;
+  }
+
+  #index a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #index a:hover {
+    text-decoration: underline;
+  }
+
+  #index-container {
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+  }
+  #index-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #index-list li {
+    padding: 5px;
+  }
