@@ -1,19 +1,20 @@
 import dts from "rollup-plugin-dts";
 import typescript from "@rollup/plugin-typescript";
 import nodeResolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 
 export default [
   {
     input: "src/newDatagram.ts",
 
-    plugins: [nodeResolve(), typescript()],
+    plugins: [commonjs(), nodeResolve(), typescript()],
 
-    output: [
-      {
-        file: "./dist/newDatagram.js",
-        format: "es",
-      },
-    ],
+    output: {
+      dir: "./dist",
+      // file: "./dist/newDatagram.js",
+      preserveModules: false,
+      format: "es",
+    },
   },
 
   {

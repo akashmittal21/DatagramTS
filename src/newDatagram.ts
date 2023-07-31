@@ -1,5 +1,4 @@
-// import "bootstrap";
-import bootstrap from "bootstrap";
+// import bootstrap from "bootstrap";
 import mermaid from "mermaid";
 
 function updateDatagram(mermaidStr: string) {
@@ -180,6 +179,7 @@ function generatePopover(tableData: [string, string][]) {
 }; 
 
 function newDatagram() {
+	let bootstrap;
 	let jsonData: any[] = [];
 	let tableData: [string, string][] = [];
 	let mermaidStr: string = `graph TD;`;
@@ -365,6 +365,7 @@ function newDatagram() {
 
 function renderGraph(mermaidStr: string, jsonData: any[], counter: number, pageCounter: number, elementCounter: number) {
 	// console.log(mermaidStr)
+	let bootstrap;
 	const edgePaths = document.querySelector(".edgePaths") as HTMLElement;
 	const paths = edgePaths.querySelectorAll("path");
 
@@ -537,7 +538,7 @@ function renderGraph(mermaidStr: string, jsonData: any[], counter: number, pageC
 
 				// Replace the old popover content with the new content
 				const popoverBody = popover.querySelector(".popover-body-node-click") as HTMLElement;
-				popoverBody.parentNode.replaceChild(popoverContent, popoverBody);
+				(<HTMLElement>popoverBody.parentElement).replaceChild(popoverContent, popoverBody);
 
 				// Create new popover content with input and dropdown
 				const categorySelect = popover.querySelector("#categorySelect") as HTMLSelectElement;
