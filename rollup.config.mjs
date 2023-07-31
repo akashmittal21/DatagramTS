@@ -17,15 +17,15 @@ export default [
     },
   },
 
-  {
-    input: "src/newDatagram.ts",
+  // {
+  //   input: "src/newDatagram.ts",
 
-    plugins: [dts()],
+  //   plugins: [dts()],
 
-    output: {
-      file: "./dist/index.d.ts",
+  //   output: {
+  //     file: "./dist/index.d.ts",
 
-      format: "es",
-    },
-  },
+  //     format: "es",
+  //   },
+  // },
 ];
